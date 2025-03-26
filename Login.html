@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maternal Health AI</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color:#D8BFD8;
+        }
+    a{margin-top: 10px;
+        margin-right: 20px;}
+    a:link, a:visited {
+  background-color:#D8BFD8;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+a:active{
+    background-color: #8B008B;
+    transform: scale(0.98);
+}
+.submit-btn {
+    background-color: #D8BFD8; 
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #D8BFD8; 
+}
+
+.submit-btn:active {
+    background-color: #8B008B;
+    transform: scale(0.98); /* Slight click effect */
+}
+
+.container{
+    background-color: #FFDAB9; /* Soft Peach */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    position: relative;
+    left: 35%;
+    z-index: 1;
+}
+
+.txt{
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.background-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the image */
+    opacity: 0.2; /* Adjust transparency here */
+    z-index: -1; /* Ensures it stays behind the login box */
+    width: 400px; /* Image size */
+}
+.sidebar {
+    background: #D8BFD8;
+    width: 250px;
+    padding: 20px;
+    position: absolute;
+    border: 3px solid whitesmoke;
+    height: 80%;
+    top: 70px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+    display: block;
+    transition: background 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+}
+.sidebar a:hover {
+    background: #8B008B;
+    padding-left: 10px;
+}
+</style>
+</head>
+<body>
+    <img src="logo.png" class="background-image" alt="pregnancy logo">
+    <header>
+        <h1>AI for Maternal Health</h1>
+        <p>Empowering Mothers with AI-driven Health Monitoring</p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <h1>LOGIN</h1>
+            </li>
+        </ul>
+    </nav>
+    <div class="flex-container">
+        <div class="sidebar">
+        <a href="#">Health & Nutrition Guidance</a>
+        <a href="#">Symptom Tracker</a>
+        <a href="#">Exercise & Fitness</a>
+        <a href="#">Medical Records</a>
+        <a href="#">Educational Records</a>
+        <a href="#">Appointment Booking</a>
+        <a href="#">FAQ & Help Center</a>
+        <a href="#">Emergency Contact</a>
+        <a href="#">Privacy Settings</a>
+        </div>
+        <div class="container">
+        <br><br>
+        <form action="form.php" method="post" style="text-align:center; position: relative; " class="left">
+        <label for="email id">Email ID: </label>
+        <input class="txt" type="email" name="email id" placeholder="Enter your email id" required><br><br>
+        <label for="password">Password: </label>
+        <input class="txt" type="password" name="password" placeholder="Enter the password" required><br><br>
+        <input type="checkbox" name="I agree to the terms and conditions" required>
+        <label for="I agree to the terms and condition">I agree to the terms and conditions of the website</label><br><br>
+        <input class="submit-btn" type="submit" value="Log In">
+        <hr width="250px">
+        <p>New to Motherhood? <a href="Register.html">Register</a></p>
+        </form>
+        </div>
+    </div>
+   <footer>
+    <p>&copy; 2025 AI for Maternal Health. All rights reserved.</p>
+</footer>
